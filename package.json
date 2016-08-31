@@ -1,0 +1,28 @@
+{
+  "name": "ed2k.js",
+  "version": "0.1.0",
+  "description": "Generate ed2k hash in the browser",
+  "keywords": [
+    "ed2k",
+    "hash"
+  ],
+  "author": "Sunnyok",
+  "license": "Apache-2.0",
+  "main": "ed2k.js",
+  "scripts": {
+    "lint": "eslint ed2k.js",
+    "build": "npm run lint && browserify ed2k.js -t babelify | uglifyjs > dist/ed2k.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "js-md4": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "eslint": "^3.3.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
