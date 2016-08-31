@@ -13,6 +13,7 @@
   "scripts": {
     "lint": "eslint ed2k.js",
     "build": "npm run lint && browserify ed2k.js -t babelify | uglifyjs > dist/ed2k.js",
+    "build-page": "npm run lint && browserify site/index.js -t babelify | uglifyjs > site/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
