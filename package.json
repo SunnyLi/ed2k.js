@@ -8,6 +8,7 @@
   ],
   "author": "Sunnyok",
   "license": "Apache-2.0",
+  "private": true,
   "main": "ed2k.js",
   "scripts": {
     "lint": "eslint ed2k.js",

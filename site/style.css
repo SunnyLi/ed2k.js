@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  height: 98%;
+}
+
+#main-container {
+  border: 1px dashed #66CCFF;
+  padding: 1rem;
+}
+
+#split-container {
+  min-height: 5rem;
+}
+
+#files-select >label {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: #CFD8DC;
+  text-align: center;
+  cursor: pointer;
+}
+
+#files-select >input {
+  display: none;
+}
+
+#hash-progress {
+  visibility: hidden;
+}
+
+#hash-progress.visible {
+  visibility: visible;
+}
+
+#hash-queue >div:nth-child(odd) {
+  background-color: #ECEFF1
+}
+
+#hash-queue >div:nth-child(even) {
+  background-color: #CFD8DC
+}
+
+#ed2k-links {
+  min-width: 100%;
+  height: 100%;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox.column {
+  flex-direction: column;
+}
+
+.flexbox.center-justify {
+  justify-content: center;
+}
+
+.flex {
+  flex: 1;
+}
+
+
+/**
+ * Github Corners w/ style addition
+ */
+.github-corner >svg {
+  fill:#151513;
+  color:#fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.github-corner .octo-arm {
+  transform-origin: 130px 106px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-25deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+   transform: rotate(-25deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
