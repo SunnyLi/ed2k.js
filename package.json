@@ -1,7 +1,7 @@
 {
   "name": "ed2k.js",
-  "version": "0.1.0",
-  "description": "Generate ed2k hash in the browser",
+  "version": "0.1.1",
+  "description": "Generate ed2k link in the browser",
   "keywords": [
     "ed2k",
     "hash"

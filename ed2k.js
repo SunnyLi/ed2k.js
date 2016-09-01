@@ -8,7 +8,7 @@ class ED2K {
   }
 
   toString () {
-    return `ed2k://|file|${encodeURIComponent(this.name)}|${this.size}|${this.hash}`
+    return `ed2k://|file|${encodeURIComponent(this.name)}|${this.size}|${this.hash}|/`
   }
 }
 
